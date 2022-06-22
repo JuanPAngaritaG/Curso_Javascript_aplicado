@@ -6,3 +6,28 @@
 html{
     font-size: 62.5%;
 }
+
+.boton{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    margin-right: 0.25rem;
+}
+
+#pantalla{
+    width: 21.75rem;
+    height: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h1{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    width: 21rem;
+    text-align: center;
+}
+
+.container{
+    margin-left: 5rem;
+}

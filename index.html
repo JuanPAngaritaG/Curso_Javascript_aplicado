@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "description" content="Esta página es de una calculadora">
+        <meta name = "robots">
+        <title>Calculadora JP</title>
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="./Programacion.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Calculadora</h1>
+        </header>
+        <main class="container">
+            <input id = "pantalla" type="number" readonly="readonly">
+            <div id="botones">
+                <div class="botonesSS">
+                    <button class = "boton" onclick= "eliminar()" type="button">DEL</button>
+                    <button class = "boton" onclick= "borrar()" type="button">C</button>
+                    <button class = "boton" onclick= "nueve()" type="button">9</button>
+                    <button class = "boton" onclick= "multiplicar()" type="button">x</button>
+                </div>
+                <div class="botonesS">
+                    <button class = "boton" onclick= "siete()" type="button">7</button>
+                    <button class = "boton" onclick= "ocho()" type="button">8</button>
+                    <button class = "boton" onclick= "nueve()" type="button">9</button>
+                    <button class = "boton" onclick= "multiplicar()" type="button">x</button>
+                </div>
+                <div class="botonesMS">
+                    <button class = "boton" onclick= "cuatro()" type="button">4</button>
+                    <button class = "boton" onclick= "cinco()" type="button">5</button>
+                    <button class = "boton" onclick= "seis()" type="button">6</button>
+                    <button class = "boton" onclick= "restar()" type="button">-</button>
+                </div>
+                <div class="botonesMI">
+                    <button class = "boton" onclick= "uno()" type="button">1</button>
+                    <button class = "boton" onclick= "dos()" type="button">2</button>
+                    <button class = "boton" onclick= "tres()" type="button">3</button>
+                    <button class = "boton" onclick= "sumar()" type="button">+</button>
+                </div>            
+                <div class="botonesI">
+                    <button class = "boton" onclick= "cero()" type="button">0</button>
+                    <button class = "boton" onclick= "resultado()" type="button">=</button>
+                    <button class = "boton" onclick= "punto()" type="button">.</button>
+                    <button class = "boton" onclick= "dividir()" type="button">/</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
