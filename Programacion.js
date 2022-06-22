@@ -164,3 +164,21 @@ function borrar()
     a = 0;
     b = 0;
 }
+
+function porcentaje()
+{
+    document.getElementById("pantalla").value = document.getElementById("pantalla").value/100;
+
+    if (document.getElementById("pantalla").value % 1 != 0) {
+        yapunto = true;
+    }
+
+    else
+    {
+        yapunto = false;
+    }
+}
+function creador()
+{
+    alert("Creado por Juan Pablo Angarita Gómez");
+}
