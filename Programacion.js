@@ -79,7 +79,7 @@ var resul = document.getElementById("pantalla");
 
 function sumar()
 {
-    a = document.getElementById("pantalla").value*1;
+    a = Number(document.getElementById("pantalla").value);
     operador = "sumar";
     document.getElementById("pantalla").value = "";
     yapunto = false;
@@ -88,7 +88,7 @@ function sumar()
 
 function restar()
 {
-    a = document.getElementById("pantalla").value*1;
+    a = Number(document.getElementById("pantalla").value);
     document.getElementById("pantalla").value = "";
     operador = "restar";
     yapunto = false;
@@ -97,7 +97,7 @@ function restar()
 
 function multiplicar()
 {
-    a = document.getElementById("pantalla").value*1;
+    a = Number(document.getElementById("pantalla").value);
     document.getElementById("pantalla").value = "";
     operador = "multiplicar";
     yapunto = false;
@@ -106,7 +106,7 @@ function multiplicar()
 
 function dividir()
 {
-    a = document.getElementById("pantalla").value*1;
+    a = Number(document.getElementById("pantalla").value);
     document.getElementById("pantalla").value = "";
     operador = "dividir";
     yapunto = false;
@@ -131,22 +131,22 @@ function eliminar()
 }
 function resultado()
 {
-    b = document.getElementById("pantalla").value*1;
+    b = Number(document.getElementById("pantalla").value);
     switch(operador)
     {
         case "sumar":
-            document.getElementById("pantalla").value = a+b;
+            document.getElementById("pantalla").value = Number(a+b);
             break;
 
         case "restar":
-            document.getElementById("pantalla").value = a-b;
+            document.getElementById("pantalla").value = Number(a-b);
             break;
 
         case "multiplicar":
-            document.getElementById("pantalla").value = a*b;
+            document.getElementById("pantalla").value = Number(a*b);
             break;
         case "dividir":
-            document.getElementById("pantalla").value = a/b;
+            document.getElementById("pantalla").value = Number(a/b);
             break;
         default:
             break;
@@ -168,7 +168,6 @@ function borrar()
 function porcentaje()
 {
     document.getElementById("pantalla").value = document.getElementById("pantalla").value/100;
-
     if (document.getElementById("pantalla").value % 1 != 0) {
         yapunto = true;
     }
